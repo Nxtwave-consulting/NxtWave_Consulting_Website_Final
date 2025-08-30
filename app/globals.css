@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 210 75% 22%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+  p,
+  span,
+  a,
+  li,
+  button,
+  input,
+  textarea,
+  select {
+    @apply font-body;
+  }
+}
+
+@layer components {
+  .luxury-container {
+    @apply container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .luxury-heading {
+    @apply font-serif font-medium tracking-tight;
+  }
+
+  .luxury-subheading {
+    @apply font-body font-light tracking-wide;
+  }
+
+  .luxury-card {
+    @apply bg-white border border-luxury-100 shadow-luxury rounded-md transition-all duration-300 hover:shadow-luxury-hover;
+  }
+
+  .luxury-button {
+    @apply px-4 py-2 sm:px-6 sm:py-3 font-body font-medium tracking-wide transition-all duration-300 rounded-none text-sm sm:text-base;
+  }
+
+  .luxury-button-primary {
+    @apply luxury-button bg-luxury-600 text-white hover:bg-luxury-700;
+  }
+
+  .luxury-button-secondary {
+    @apply luxury-button bg-transparent border border-luxury-600 text-luxury-600 hover:bg-luxury-50;
+  }
+
+  .luxury-button-gold {
+    @apply luxury-button bg-gold-500 text-charcoal-800 hover:bg-gold-600;
+  }
+
+  .luxury-input {
+    @apply border-b border-luxury-200 bg-transparent px-0 py-2 focus:border-luxury-600 focus:ring-0 rounded-none text-sm sm:text-base;
+  }
+
+  .luxury-badge {
+    @apply inline-flex items-center rounded-none border border-gold-300 bg-cream-200 px-2 py-1 sm:px-2.5 sm:py-0.5 text-xs font-medium text-luxury-700;
+  }
+
+  .luxury-divider {
+    @apply w-16 sm:w-20 h-0.5 bg-gold-500 my-4 sm:my-6;
+  }
+
+  .luxury-section {
+    @apply py-6 sm:py-8 md:py-12 lg:py-16;
+  }
+
+  .animate-on-scroll {
+    @apply opacity-0;
+  }
+
+  .animate-on-scroll.animated {
+    @apply animate-fade-in;
+  }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    .luxury-container {
+      @apply px-4;
+    }
+
+    .luxury-section {
+      @apply py-6;
+    }
+
+    .luxury-button {
+      @apply px-4 py-3 text-sm;
+    }
+
+    .luxury-divider {
+      @apply w-12 my-3;
+    }
+  }
+}
+
+/* Mobile carousel improvements */
+@keyframes scroll-row1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+@keyframes scroll-row2 {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3 - 5%));
+  }
+}
+
+.animate-scroll-row1 {
+  animation: scroll-row1 25s linear infinite;
+  will-change: transform;
+  display: flex;
+  width: max-content;
+}
+
+.animate-scroll-row2 {
+  animation: scroll-row2 25s linear infinite reverse;
+  will-change: transform;
+  display: flex;
+  width: max-content;
+}
+
+/* Pause animation on hover for better mobile experience */
+@media (hover: hover) {
+  .animate-scroll-row1:hover,
+  .animate-scroll-row2:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+  .animate-scroll-row1,
+  .animate-scroll-row2 {
+    animation-duration: 20s;
+  }
+}

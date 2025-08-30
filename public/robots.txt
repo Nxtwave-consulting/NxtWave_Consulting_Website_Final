@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nxtwave-consulting.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /
+Allow: /founders
+Allow: /blogs
+Allow: /careers
+Allow: /privacy
+Allow: /terms
+Allow: /press-release/
+Allow: /blog/
