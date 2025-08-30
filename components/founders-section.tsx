@@ -39,6 +39,7 @@ export default function FoundersSection() {
     { name: "Brex", logo: "/images/logos/brex-logo-updated.png" },
     { name: "Altair", logo: "/images/logos/altair-logo.png" },
     { name: "Esri", logo: "/images/logos/esri-logo.png" },
+    { name: "Mercedes-Benz", logo: "/images/logos/mercedes-benz-logo.png" },
     { name: "Optum", logo: "/images/logos/optum-logo.png" },
     { name: "United Healthcare", logo: "/images/logos/unitedhealthcare-logo.webp" },
     { name: "Visa", logo: "/images/logos/visa-logo.png" },
