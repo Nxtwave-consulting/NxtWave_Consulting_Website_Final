@@ -91,7 +91,44 @@ export default function BlogsSection() {
                   </a>
                 </div>
 
-                {/* Article 1 - Fixed layout to match Article 2 */}
+                {/* Article 1 - New Determinism Article */}
+                <Card className="border-0 shadow-luxury hover:shadow-luxury-hover transition-all duration-500">
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center bg-white rounded-lg border border-gold-200">
+                        <img
+                          src="/images/forbes-magazine-logo.png"
+                          alt="Forbes"
+                          className="w-8 h-auto sm:w-12 lg:w-16 object-contain"
+                        />
+                      </div>
+                      <div className="space-y-3 min-w-0 flex-1">
+                        <h3 className="text-base sm:text-lg font-medium text-luxury-800">
+                          <a
+                            href="https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2025/09/05/why-determinism-is-the-missing-piece-in-enterprise-ai/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-luxury-600 transition-colors"
+                          >
+                            Why Determinism Is The Missing Piece In Enterprise AI
+                            <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 inline-block ml-2" />
+                          </a>
+                        </h3>
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-luxury-600">
+                          <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
+                          <span>September 5, 2025</span>
+                        </div>
+                        <p className="text-charcoal-600 font-light text-sm sm:text-base">
+                          Exploring why deterministic AI systems are crucial for enterprise adoption and how
+                          predictable, consistent AI behavior can transform business operations. This article discusses
+                          the importance of reliability and control in enterprise AI implementations.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Article 2 - Scaling DevOps Article */}
                 <Card className="border-0 shadow-luxury hover:shadow-luxury-hover transition-all duration-500">
                   <CardContent className="p-4 sm:p-6">
                     <div className="flex items-start gap-4">
@@ -128,7 +165,7 @@ export default function BlogsSection() {
                   </CardContent>
                 </Card>
 
-                {/* Article 2 */}
+                {/* Article 3 - Cultural Competence Article */}
                 <Card className="border-0 shadow-luxury hover:shadow-luxury-hover transition-all duration-500">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
@@ -425,7 +462,8 @@ export default function BlogsSection() {
                           <span>June 19, 2024</span>
                         </div>
                         <p className="text-charcoal-600 font-light">
-                          Kris Talajic shares his unique background as a former professional soccer player turned AI technology expert, discussing the impact of AI in the dental space and overall Healthcare.             
+                          Kris Talajic shares his unique background as a former professional soccer player turned AI
+                          technology expert, discussing the impact of AI in the dental space and overall Healthcare.
                         </p>
                         <div className="space-y-3 pt-2">
                           <a
