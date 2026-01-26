@@ -30,7 +30,7 @@ export default function Header() {
     { name: "About", href: "/#about" },
     { name: "Services", href: "/#services" },
     { name: "Our Approach", href: "/#approach" },
-    { name: "Team", href: "/founders" },
+    // { name: "Team", href: "/founders" }, // Temporarily hidden - uncomment to restore
     { name: "Media", href: "/blogs" },
     { name: "Contact", href: "/#contact" },
   ]
