@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { LineChart, BrainCircuit, Users, Presentation, BarChart4, Lightbulb } from "lucide-react"
+import { LineChart, BrainCircuit, Users, Route, Workflow, FlaskConical, HeartPulse, Cpu } from "lucide-react"
 
 export default function ServicesSection() {
   useEffect(() => {
@@ -30,37 +30,52 @@ export default function ServicesSection() {
       icon: <LineChart className="h-10 w-10 text-luxury-600" />,
       title: "GTM Strategy",
       description:
-        "Comprehensive go-to-market strategies that align with your business goals and target audience's neurological preferences.",
+        "Go-to-market strategy for Healthcare and Tech: positioning, segmentation, channel mix, and launch plans built around how your audience actually decides.",
     },
     {
-      icon: <BarChart4 className="h-10 w-10 text-luxury-600" />,
-      title: "Financial Strategy",
+      icon: <Workflow className="h-10 w-10 text-luxury-600" />,
+      title: "Behaviorally Informed Conversion System",
       description:
-        "Providing services to optimize financials and help drive strategic decisions based on financial analysis. We help align your financial operations with growth objectives.",
-    },
-    {
-      icon: <BrainCircuit className="h-10 w-10 text-luxury-600" />,
-      title: "Neuroscience-Based Marketing",
-      description:
-        "Marketing approaches informed by polyvagal theory and nervous system regulation to create deeper customer connections.",
+        "Our end-to-end system for moving an audience from awareness to action: diagnose the barriers, design the intervention, orchestrate the journey, and measure what converts.",
     },
     {
       icon: <Users className="h-10 w-10 text-luxury-600" />,
-      title: "Team Alignment",
+      title: "Hard-to-Reach Population Engagement",
       description:
-        "Performance psychology meets neuroscience methodologies to improve team cohesion, communication, and performance.",
+        "Strategies for the segments standard outreach misses: disengaged members, underserved patients, skeptical buyers, and audiences with low trust or low awareness.",
     },
     {
-      icon: <Presentation className="h-10 w-10 text-luxury-600" />,
-      title: "Executive Coaching",
+      icon: <BrainCircuit className="h-10 w-10 text-luxury-600" />,
+      title: "Neuroscience-Based Messaging",
       description:
-        "We bring neuroscience and nervous system strategy into the boardroom, helping your executives lead with clarity, resilience, and sustainable performance using parts work and nervous system regulation techniques.",
+        "Messaging and creative grounded in how the brain processes attention, trust, risk, and reward, so the right message lands at the moment someone is ready to act.",
     },
     {
-      icon: <Lightbulb className="h-10 w-10 text-luxury-600" />,
-      title: "Research & Innovation",
+      icon: <Route className="h-10 w-10 text-luxury-600" />,
+      title: "Journey & Channel Orchestration",
       description:
-        "Deep insights into customer behavior through neuroscience research combined with facilitated innovation sessions that leverage the brain's creative potential while managing stress responses.",
+        "Multi-touch journeys that sequence the right message, channel, and timing for each segment, executed through your own teams and systems.",
+    },
+    {
+      icon: <FlaskConical className="h-10 w-10 text-luxury-600" />,
+      title: "Measurement & Experimentation",
+      description:
+        "Test-and-control design, holdout groups, and conversion analytics that prove what worked, for whom, and why, and tie the lift back to business outcomes.",
+    },
+  ]
+
+  const industries = [
+    {
+      icon: <HeartPulse className="h-8 w-8 text-luxury-600" />,
+      title: "Healthcare",
+      description:
+        "Health plans, providers, and health-tech companies trying to reach members and patients who don't engage: preventive screenings, care-gap closure, enrollment, adherence, and benefit utilization.",
+    },
+    {
+      icon: <Cpu className="h-8 w-8 text-luxury-600" />,
+      title: "Technology",
+      description:
+        "B2B and B2C tech companies facing skeptical buyers, complex buying committees, and late-majority adopters, where the barrier to conversion is trust and perceived risk, not awareness.",
     },
   ]
 
@@ -75,7 +90,7 @@ export default function ServicesSection() {
             </h2>
             <div className="luxury-divider mx-auto"></div>
             <p className="mx-auto max-w-[700px] text-charcoal-600 md:text-xl font-light">
-              Our services blend traditional business strategy with cutting-edge neuroscience for optimal results.
+              Go-to-market strategy and behavioral science, built to convert the audiences that are hardest to reach.
             </p>
           </div>
         </div>
@@ -97,6 +112,23 @@ export default function ServicesSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mx-auto max-w-6xl pb-4 animate-on-scroll">
+          <h3 className="text-2xl sm:text-3xl font-serif font-medium text-luxury-800 text-center mb-8">
+            Where We Specialize
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            {industries.map((industry) => (
+              <div key={industry.title} className="bg-white border border-luxury-100 p-6 sm:p-8 flex gap-4 sm:gap-6">
+                <div className="p-3 bg-cream-200 h-fit flex-shrink-0">{industry.icon}</div>
+                <div>
+                  <h4 className="text-lg sm:text-xl font-serif font-medium text-luxury-800 mb-2">{industry.title}</h4>
+                  <p className="text-charcoal-600 font-light text-sm sm:text-base">{industry.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

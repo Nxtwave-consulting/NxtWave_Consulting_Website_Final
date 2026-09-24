@@ -6,7 +6,8 @@ import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Brain, Target, TrendingUp, Heart, ArrowRight, CheckCircle, Zap, Shield, Award } from "lucide-react"
+import { Brain, Target, TrendingUp, Heart, ArrowRight, CheckCircle, Zap, Award } from "lucide-react"
+import { BarrierPathsIllustration } from "@/components/illustrations"
 
 export default function ManifestoSection() {
   const router = useRouter()
@@ -57,12 +58,13 @@ export default function ManifestoSection() {
       icon: <Brain className="h-8 w-8 text-luxury-600" />,
       title: "Science-First Approach",
       description:
-        "Every strategy is grounded in neuroscience research and performance psychology, not just intuition.",
+        "Every strategy is grounded in neuroscience and behavioral science research, not just intuition.",
     },
     {
       icon: <Heart className="h-8 w-8 text-luxury-600" />,
       title: "Human-Centered Design",
-      description: "We design for the nervous system, creating strategies that resonate at a neurological level.",
+      description:
+        "We design for how people actually decide, including the barriers of trust, effort, and perceived risk that keep hard-to-reach audiences from acting.",
     },
     {
       icon: <Target className="h-8 w-8 text-luxury-600" />,
@@ -72,7 +74,8 @@ export default function ManifestoSection() {
     {
       icon: <TrendingUp className="h-8 w-8 text-luxury-600" />,
       title: "Measurable Impact",
-      description: "We track both traditional business metrics and neurological indicators for complete visibility.",
+      description:
+        "Every program runs against a control group, so we can prove what converted, for whom, and why.",
     },
   ]
 
@@ -92,10 +95,10 @@ export default function ManifestoSection() {
       title: "NXT Wave Approach",
       items: [
         "Neuroscience-backed strategies",
-        "Customized to nervous system states",
-        "Integrates performance psychology",
-        "Sustainable growth focus",
-        "Deep behavioral insights",
+        "Built for hard-to-reach populations",
+        "Diagnoses the barrier behind each segment",
+        "Proven with test-and-control measurement",
+        "Deep Healthcare and Tech expertise",
       ],
       accent: "text-luxury-600",
     },
@@ -113,8 +116,9 @@ export default function ManifestoSection() {
             </h1>
             <div className="luxury-divider mx-auto"></div>
             <p className="mx-auto max-w-[800px] text-charcoal-600 md:text-xl font-light leading-relaxed">
-              We pioneer neurologically-aligned go-to-market strategy that integrates neuroscience, polyvagal theory,
-              and performance psychology with traditional GTM frameworks for sustainable growth and superior alignment.
+              We build go-to-market strategies and Behaviorally Informed Conversion Systems that combine neuroscience
+              and behavioral science with proven GTM frameworks, so organizations in Healthcare and Tech can reach
+              and convert the populations that standard outreach misses.
             </p>
           </div>
         </div>
@@ -133,12 +137,14 @@ export default function ManifestoSection() {
                 We believe that business is inherently human and humans are neurological beings.
               </p>
               <p>
-                We do not treat people as spreadsheet cells but as complex, emotionally-driven entities. Every customer
-                choice, team action, and market response is grounded in the nervous system. Yet most consulting firms
-                ignore this biological reality entirely.
+                We do not treat people as spreadsheet cells but as complex, emotionally-driven decision makers. The
+                member who skips a screening, the patient who never enrolls, the buyer who stalls in evaluation: each
+                is responding to a specific barrier, whether trust, effort, access, or perceived risk. Most strategies
+                never diagnose it, so they send more of the same message and get the same silence.
               </p>
               <p className="text-xl font-medium text-luxury-700">
-                Our strategies are built from this fundamental truth: business success requires neurological alignment.
+                Our strategies are built from this fundamental truth: you can't convert an audience until you understand
+                what is stopping it from acting.
               </p>
             </div>
           </div>
@@ -171,12 +177,12 @@ export default function ManifestoSection() {
           <div className="animate-on-scroll bg-luxury-50 p-8 sm:p-12 border border-luxury-100">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-serif font-medium text-luxury-800 mb-6">
-                The Scientific Marketing Approach (SMA)
+                The Behaviorally Informed Conversion System
               </h2>
               <div className="luxury-divider mx-auto mb-6"></div>
               <p className="max-w-3xl mx-auto text-charcoal-600 font-light text-lg">
-                Our proprietary methodology that integrates neuroscience, polyvagal theory, and performance psychology
-                with proven business strategy frameworks.
+                Our proprietary system for reaching hard-to-reach populations. It integrates neuroscience and behavioral
+                science with proven go-to-market frameworks, and it is built to be measured.
               </p>
             </div>
 
@@ -187,10 +193,10 @@ export default function ManifestoSection() {
                     01
                   </div>
                   <div>
-                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">Nervous System Assessment</h3>
+                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">Population &amp; Barrier Mapping</h3>
                     <p className="text-charcoal-600 font-light text-sm">
-                      Map internal team and target market nervous system states. Identify neurobiological patterns
-                      driving behaviors and resistance.
+                      Segment the audience by behavior and diagnose what blocks each segment from acting: awareness,
+                      trust, access, effort, or perceived risk.
                     </p>
                   </div>
                 </div>
@@ -200,10 +206,12 @@ export default function ManifestoSection() {
                     02
                   </div>
                   <div>
-                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">Polyvagal Strategy Design</h3>
+                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">
+                      Neuroscience-Informed Design
+                    </h3>
                     <p className="text-charcoal-600 font-light text-sm">
-                      Create GTM strategies that align with the autonomic nervous system. Address safety, engagement,
-                      trust, and decision readiness.
+                      Design the message, messenger, and moment for each segment using what neuroscience shows about
+                      attention, trust, risk, and reward.
                     </p>
                   </div>
                 </div>
@@ -213,12 +221,10 @@ export default function ManifestoSection() {
                     03
                   </div>
                   <div>
-                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">
-                      Performance Psychology Integration
-                    </h3>
+                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">Journey Orchestration</h3>
                     <p className="text-charcoal-600 font-light text-sm">
-                      Apply psychological frameworks to optimize team motivation, communication, and execution. Enhance
-                      leadership effectiveness and team cohesion.
+                      Sequence the right touches across the right channels, executed through your own teams and
+                      systems, so each segment gets the intervention that fits its barrier.
                     </p>
                   </div>
                 </div>
@@ -228,10 +234,10 @@ export default function ManifestoSection() {
                     04
                   </div>
                   <div>
-                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">Neurological Measurement</h3>
+                    <h3 className="text-lg font-serif font-medium text-luxury-800 mb-2">Measure, Learn, Scale</h3>
                     <p className="text-charcoal-600 font-light text-sm">
-                      Track traditional KPIs alongside neural indicators (e.g., emotional resonance, stress reduction).
-                      Validate strategy efficacy through comprehensive metrics.
+                      Run every program against a control group, measure true conversion lift by segment, and feed what
+                      we learn into the next cycle.
                     </p>
                   </div>
                 </div>
@@ -239,13 +245,9 @@ export default function ManifestoSection() {
 
               <div className="relative">
                 <div className="absolute -top-3 -left-3 -bottom-3 -right-3 border border-gold-400 z-0"></div>
-                <video autoPlay loop muted playsInline className="w-full h-auto relative z-10">
-                  <source
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/shutterstock_3536067231%20%281%29-BR085G18INERni5XLoGTtktwIX8F47.mov"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <div className="relative z-10">
+                  <BarrierPathsIllustration />
+                </div>
               </div>
             </div>
           </div>
@@ -258,8 +260,8 @@ export default function ManifestoSection() {
               </h2>
               <div className="luxury-divider mx-auto mb-6"></div>
               <p className="max-w-3xl mx-auto text-charcoal-600 font-light text-lg">
-                We incorporate MEDDPICC rigor into our SMA to ensure commercial accountability and operational
-                alignment, creating a neurologically-informed sales methodology.
+                We build MEDDPICC rigor into the Behaviorally Informed Conversion System to ensure commercial
+                accountability and operational alignment, creating a neuroscience-informed sales methodology.
               </p>
             </div>
 
@@ -270,7 +272,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Metrics</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Combine ROI with neural KPIs (e.g., trust indicators)
+                      Combine ROI with behavioral KPIs (e.g., response, activation, conversion lift)
                     </p>
                   </div>
                 </div>
@@ -279,7 +281,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Economic Buyer</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Define neuro-personas and emotional decision levers
+                      Define behavioral personas and the emotional levers behind each decision
                     </p>
                   </div>
                 </div>
@@ -288,7 +290,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Decision Criteria</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Align with psychological drivers and nervous system states
+                      Align with the psychological drivers and barriers behind each decision
                     </p>
                   </div>
                 </div>
@@ -297,7 +299,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Decision Process</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Reduce cognitive load, ensure safe engagement pathways
+                      Reduce cognitive load and friction at every step
                     </p>
                   </div>
                 </div>
@@ -308,7 +310,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Paper Process</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Simplify contracts using stress-minimized design principles
+                      Simplify contracts and approvals with low-friction design
                     </p>
                   </div>
                 </div>
@@ -317,7 +319,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Identify Pain</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Map to nervous system responses (e.g., threat activation)
+                      Map to the perceived risks and barriers that stall action
                     </p>
                   </div>
                 </div>
@@ -335,7 +337,7 @@ export default function ManifestoSection() {
                   <div>
                     <h4 className="font-serif font-medium text-luxury-800 mb-1">Competition</h4>
                     <p className="text-sm text-charcoal-600 font-light">
-                      Mitigate threat responses, emphasize relational trust
+                      Reduce perceived risk, emphasize trust and credibility
                     </p>
                   </div>
                 </div>
@@ -380,24 +382,27 @@ export default function ManifestoSection() {
               <div className="w-20 h-0.5 bg-gold-500 mx-auto mb-6"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="mb-4 flex justify-center">
+                  <TrendingUp className="h-12 w-12 text-gold-400" />
+                </div>
+                <h3 className="text-xl font-serif font-medium mb-3">+44%</h3>
+                <p className="text-luxury-100 font-light">Conversion Increase</p>
+              </div>
               <div>
                 <div className="mb-4 flex justify-center">
                   <Zap className="h-12 w-12 text-gold-400" />
                 </div>
-                <h3 className="text-xl font-serif font-medium mb-3">40%+ Higher</h3>
-                <p className="text-luxury-100 font-light">
-                  Campaign effectiveness when strategies align with nervous system states
-                </p>
+                <h3 className="text-xl font-serif font-medium mb-3">2x</h3>
+                <p className="text-luxury-100 font-light">Operational Efficiency</p>
               </div>
               <div>
                 <div className="mb-4 flex justify-center">
-                  <Shield className="h-12 w-12 text-gold-400" />
+                  <Target className="h-12 w-12 text-gold-400" />
                 </div>
-                <h3 className="text-xl font-serif font-medium mb-3">35% Better</h3>
-                <p className="text-luxury-100 font-light">
-                  Team alignment and performance with neuroscience-backed approaches
-                </p>
+                <h3 className="text-xl font-serif font-medium mb-3">+9%</h3>
+                <p className="text-luxury-100 font-light">Schedule Rate Lift</p>
               </div>
               <div>
                 <div className="mb-4 flex justify-center">
@@ -418,13 +423,13 @@ export default function ManifestoSection() {
                 We are not traditional consultants. We are strategy architects rooted in science and human behavior.
                 <strong className="text-luxury-800">
                   {" "}
-                  Every system we design is validated by how the human brain and nervous system function, not just how
-                  business textbooks say they should.
+                  Every system we design is validated by how people actually decide and act, not just how business
+                  textbooks say they should.
                 </strong>
               </p>
               <p>
                 Our strategies integrate the rigor of proven frameworks like MEDDPICC with the sophistication of
-                neuroscience research, creating a methodology that drives both commercial success and human alignment.
+                neuroscience research, creating a system that reaches the people others miss and proves the result.
               </p>
               <p className="text-xl font-medium text-luxury-700">
                 This is not only a better way to grow. It's the future of how business gets done.

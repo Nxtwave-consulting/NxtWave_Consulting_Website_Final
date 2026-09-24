@@ -2,6 +2,7 @@
 
 import { useEffect } from "react"
 import { CheckCircle, Award, TrendingUp, Users } from "lucide-react"
+import { ScienceStrategyIllustration } from "@/components/illustrations"
 
 export default function AboutSection() {
   useEffect(() => {
@@ -35,8 +36,8 @@ export default function AboutSection() {
             </h2>
             <div className="luxury-divider mx-auto"></div>
             <p className="mx-auto max-w-[700px] text-charcoal-600 md:text-xl font-light">
-              With 15 years of experience across Tech, AI, Finance, FMCG, and Healthcare, we bring a unique blend of
-              business acumen and neuroscience expertise.
+              With 15 years of experience and deep specialization in Healthcare and Tech, we combine go-to-market
+              rigor with neuroscience and behavioral science to reach the audiences others can't.
             </p>
           </div>
         </div>
@@ -47,18 +48,8 @@ export default function AboutSection() {
               {/* Gold frame */}
               <div className="absolute -top-2 -right-2 -bottom-2 -left-2 sm:-top-3 sm:-right-3 sm:-bottom-3 sm:-left-3 border border-gold-400 z-0"></div>
 
-              {/* Video container with more compact dimensions */}
-              <div className="relative w-full aspect-[3/2.5] z-10 bg-luxury-800/10">
-                <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-                  <source
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/shutterstock_3536067231%20%281%29-BR085G18INERni5XLoGTtktwIX8F47.mov"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-luxury-900/30 to-transparent"></div>
+              <div className="relative w-full aspect-[3/2.5] z-10">
+                <ScienceStrategyIllustration />
               </div>
 
               {/* Decorative element - made smaller for mobile */}
@@ -88,12 +79,12 @@ export default function AboutSection() {
                       <Users className="h-4 w-4 sm:h-5 sm:w-5 text-luxury-600" />
                     </div>
                     <h3 className="text-lg sm:text-xl font-serif font-medium text-luxury-800">
-                      For Companies of All Sizes
+                      Healthcare &amp; Tech Specialists
                     </h3>
                   </div>
                   <p className="text-charcoal-600 pl-11 sm:pl-[52px] font-light text-sm sm:text-base">
-                    From startups to enterprises, we've helped companies find clarity, scale sustainably, and execute
-                    with confidence.
+                    From health plans and providers to high-growth technology companies, we help organizations reach
+                    the members, patients, and buyers who don't respond to standard outreach.
                   </p>
                 </div>
               </li>
@@ -106,22 +97,8 @@ export default function AboutSection() {
                     <h3 className="text-lg sm:text-xl font-serif font-medium text-luxury-800">Deep Expertise</h3>
                   </div>
                   <p className="text-charcoal-600 pl-11 sm:pl-[52px] font-light text-sm sm:text-base">
-                    Specialized in performance psychology meets neuroscience, polyvagal theory, and nervous system
-                    alignment for business growth, positioning and market penetration.
-                  </p>
-                </div>
-              </li>
-              <li className="transform transition-all duration-300 hover:translate-x-2">
-                <div className="grid gap-3">
-                  <div className="flex items-center gap-3">
-                    <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-none bg-luxury-50 border border-luxury-200">
-                      <Award className="h-4 w-4 sm:h-5 sm:w-5 text-luxury-600" />
-                    </div>
-                    <h3 className="text-lg sm:text-xl font-serif font-medium text-luxury-800">Financial Leadership</h3>
-                  </div>
-                  <p className="text-charcoal-600 pl-11 sm:pl-[52px] font-light text-sm sm:text-base">
-                    Extensive experience in strategic finance working with small companies to Fortune 5 companies,
-                    bringing strategic financial insight to our consulting approach.
+                    Specialized in applying neuroscience and behavioral science to go-to-market, diagnosing what
+                    blocks action for each audience and designing the messages, channels, and moments that remove it.
                   </p>
                 </div>
               </li>
@@ -133,10 +110,18 @@ export default function AboutSection() {
                     </div>
                     <h3 className="text-lg sm:text-xl font-serif font-medium text-luxury-800">Measurable Results</h3>
                   </div>
-                  <p className="text-charcoal-600 pl-11 sm:pl-[52px] font-light text-sm sm:text-base">
-                    Our clients experience an average of 40% increase in campaign effectiveness and 35% improvement in
-                    team alignment.
-                  </p>
+                  <div className="pl-11 sm:pl-[52px] grid grid-cols-3 gap-3 sm:gap-4">
+                    {[
+                      { value: "+44%", label: "Conversion Increase" },
+                      { value: "2x", label: "Operational Efficiency" },
+                      { value: "+9%", label: "Schedule Rate Lift" },
+                    ].map((stat) => (
+                      <div key={stat.label} className="border border-luxury-100 bg-luxury-50 px-2 py-3 text-center">
+                        <div className="text-xl sm:text-2xl font-serif font-medium text-luxury-700">{stat.value}</div>
+                        <div className="mt-1 text-xs sm:text-sm font-light text-charcoal-600">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </li>
             </ul>

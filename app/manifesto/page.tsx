@@ -5,7 +5,7 @@ import ManifestoSection from "@/components/manifesto-section"
 export const metadata = {
   title: "Our Manifesto | NXT Wave Consulting",
   description:
-    "Discover how we're revolutionizing business strategy by combining cutting-edge GTM approaches with neuroscience-backed methodologies. Learn our philosophy, process, and what makes us different.",
+    "How we combine go-to-market rigor with neuroscience and behavioral science to reach and convert hard-to-reach populations in Healthcare and Tech. Our philosophy, our Behaviorally Informed Conversion System, and what makes us different.",
 }
 
 export default function ManifestoPage() {

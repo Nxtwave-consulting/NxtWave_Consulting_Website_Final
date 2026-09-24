@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { HeroIllustration } from "@/components/illustrations"
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -40,19 +41,19 @@ export default function HeroSection() {
       </div>
 
       <div className="luxury-container relative z-10">
-        <div className="grid gap-8 lg:gap-12 lg:grid-cols-[1fr_600px] xl:grid-cols-[1fr_700px] items-center">
+        <div className="grid gap-8 lg:gap-12 lg:grid-cols-[1fr_420px] xl:grid-cols-[1fr_700px] items-center">
           <div className="flex flex-col justify-center space-y-8 text-center lg:text-left animate-on-scroll">
             <div className="space-y-6">
-              <div className="inline-flex items-center luxury-badge mb-4">Premium Strategy Consulting</div>
+              <div className="inline-flex items-center luxury-badge mb-4">Healthcare &amp; Tech GTM Consulting</div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-medium tracking-tight text-luxury-800 leading-tight">
-                Go-To-Market,
+                Reach the <span className="whitespace-nowrap">Hard-to-Reach.</span>
                 <br />
-                <span className="text-luxury-600">Reimagined.</span>
+                <span className="text-luxury-600">Convert Them.</span>
               </h1>
               <div className="luxury-divider mx-auto lg:mx-0"></div>
               <p className="max-w-[600px] text-charcoal-700 text-sm sm:text-base md:text-lg lg:text-xl mx-auto lg:mx-0 font-light leading-relaxed">
-                We combine cutting-edge GTM strategy with neuroscience-backed marketing psychology to create lasting
-                business momentum.
+                We pair go-to-market strategy with our Behaviorally Informed Conversion System, grounded in
+                neuroscience, to move the populations that ignore standard outreach from awareness to action.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
@@ -73,18 +74,8 @@ export default function HeroSection() {
               {/* Gold frame border */}
               <div className="absolute -top-4 -left-4 -bottom-4 -right-4 border border-gold-400 z-0"></div>
 
-              {/* Video container */}
-              <div className="relative w-full h-full z-10 bg-luxury-800/10">
-                <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-                  <source
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/shutterstock_1084064317%20%281%29-h2gqOHa2nlht2541uAgDxYFh2wSoEP.mov"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-luxury-900/30 to-transparent"></div>
+              <div className="relative w-full h-full z-10">
+                <HeroIllustration />
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { ConversionLoopIllustration } from "@/components/illustrations"
 
 export default function ApproachSection() {
   useEffect(() => {
@@ -29,23 +30,27 @@ export default function ApproachSection() {
   const steps = [
     {
       number: "01",
-      title: "Neurological Assessment",
-      description: "We begin by understanding your team's and market's nervous system states to establish a baseline.",
+      title: "Population & Barrier Mapping",
+      description:
+        "We segment your audience by behavior, not just demographics, and diagnose what is blocking each segment from acting: awareness, trust, access, effort, or perceived risk.",
     },
     {
       number: "02",
-      title: "Strategy Integration",
-      description: "We develop GTM strategies that incorporate performance psychology meets neuroscience approaches.",
+      title: "Neuroscience-Informed Design",
+      description:
+        "We design the message, messenger, and moment for each segment, using what neuroscience tells us about attention, trust, and decision-making.",
     },
     {
       number: "03",
-      title: "Implementation Support",
-      description: "Our team provides hands-on guidance as you implement these neuroscience-backed strategies.",
+      title: "Journey Orchestration",
+      description:
+        "We turn the design into a multi-touch journey across the channels your audience actually uses, executed through your own teams and systems.",
     },
     {
       number: "04",
-      title: "Measurement & Refinement",
-      description: "We track both traditional metrics and neurological indicators to continuously improve results.",
+      title: "Measure, Learn, Scale",
+      description:
+        "Every program runs with a control group, so we can prove what converted, for whom, and why, then scale what works.",
     },
   ]
 
@@ -60,56 +65,25 @@ export default function ApproachSection() {
           <div className="space-y-4">
             <div className="luxury-badge">Our Approach</div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-medium tracking-tight text-luxury-800">
-              The Scientific Marketing Approach
+              The Behaviorally Informed Conversion System
             </h2>
             <div className="luxury-divider mx-auto"></div>
             <p className="mx-auto max-w-[700px] text-charcoal-600 md:text-xl font-light">
-              Our methodology integrates neuroscience principles with proven business strategies for optimal results.
+              A repeatable system for moving hard-to-reach populations from awareness to action, grounded in neuroscience and proven in the field.
             </p>
           </div>
         </div>
 
         <div className="mx-auto max-w-6xl py-12 sm:py-16">
           <div className="grid gap-8 lg:gap-16 md:grid-cols-2 items-center">
-            {/* Media Section - Image for mobile, Video for desktop */}
+            {/* Illustration */}
             <div className="flex flex-col justify-center order-1 md:order-1 animate-on-scroll">
               <div className="relative">
                 {/* Gold frame */}
                 <div className="absolute -top-2 -left-2 -bottom-2 -right-2 sm:-top-4 sm:-left-4 sm:-bottom-4 sm:-right-4 border border-gold-400 z-0"></div>
 
                 <div className="relative aspect-square max-w-sm sm:max-w-md mx-auto md:max-w-none z-10">
-                  {/* Mobile Image - Show only on screens smaller than 768px */}
-                  <div className="block md:hidden w-full h-full">
-                    <img
-                      src="/images/neuroscience-brain-mobile.jpg"
-                      alt="Digital brain visualization representing neuroscience-backed business strategy"
-                      className="w-full h-full object-cover"
-                    />
-                    {/* Overlay gradient for image */}
-                    <div className="absolute inset-0 bg-gradient-to-tr from-luxury-900/30 to-transparent"></div>
-                  </div>
-
-                  {/* Desktop Video - Show only on screens 768px and larger */}
-                  <div className="hidden md:block w-full h-full">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                      preload="auto"
-                      controls={false}
-                    >
-                      <source
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/shutterstock_1106939261-zbZfQUbKLq1yqoUE4KqZQUgB8Z2J3y.mov"
-                        type="video/mp4"
-                      />
-                      <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/shutterstock_1106939261-zbZfQUbKLq1yqoUE4KqZQUgB8Z2J3y.mov" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                    {/* Overlay gradient for video */}
-                    <div className="absolute inset-0 bg-gradient-to-tr from-luxury-900/30 to-transparent"></div>
-                  </div>
+                  <ConversionLoopIllustration />
                 </div>
               </div>
             </div>

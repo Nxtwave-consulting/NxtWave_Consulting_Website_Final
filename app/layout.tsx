@@ -17,9 +17,9 @@ const raleway = Raleway({
 })
 
 export const metadata = {
-  title: "NXT Wave Consulting | Go-To-Market, Reimagined",
+  title: "NXT Wave Consulting | GTM & Behaviorally Informed Conversion for Healthcare and Tech",
   description:
-    "We combine cutting-edge GTM strategy with neuroscience-backed marketing psychology to create lasting business momentum.",
+    "Go-to-market strategy and a Behaviorally Informed Conversion System that moves hard-to-reach populations to act. Grounded in neuroscience, specialized in Healthcare and Tech.",
   generator: "v0.dev",
   themeColor: "#0f3c5f",
   icons: {

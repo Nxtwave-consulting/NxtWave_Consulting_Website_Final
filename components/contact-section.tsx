@@ -113,12 +113,11 @@ export default function ContactSection() {
           <div className="space-y-4">
             <div className="luxury-badge">Get in Touch</div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-medium tracking-tight text-luxury-800">
-              Ready to Transform Your Strategy?
+              Let's Move Your Audience to Action
             </h2>
             <div className="luxury-divider mx-auto"></div>
             <p className="mx-auto max-w-[700px] text-charcoal-600 md:text-xl font-light">
-              Schedule a consultation or send us a message to learn how our unique GTM services combined with
-              neuroscience-backed approach can elevate your business.
+              Book a discovery call to uncover what's holding your audience back and how to reach them.
             </p>
           </div>
         </div>
@@ -205,7 +204,7 @@ export default function ContactSection() {
                   <h3 className="text-2xl font-serif font-medium text-luxury-800">Book a Discovery Call</h3>
                   <div className="luxury-divider mx-auto"></div>
                   <p className="text-sm text-charcoal-600">
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    Tell us who you're trying to reach and what you need them to do.
                   </p>
                 </div>
 
@@ -286,11 +285,11 @@ export default function ContactSection() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="gtm">GTM Strategy</SelectItem>
-                      <SelectItem value="neuroscience">Neuroscience-Based Marketing</SelectItem>
-                      <SelectItem value="team">Team Alignment</SelectItem>
-                      <SelectItem value="coaching">Executive Coaching</SelectItem>
-                      <SelectItem value="financial">Financial Strategy</SelectItem>
-                      <SelectItem value="research">Research & Innovation</SelectItem>
+                      <SelectItem value="conversion">Behaviorally Informed Conversion System</SelectItem>
+                      <SelectItem value="hard-to-reach">Hard-to-Reach Population Engagement</SelectItem>
+                      <SelectItem value="messaging">Neuroscience-Based Messaging</SelectItem>
+                      <SelectItem value="measurement">Measurement & Experimentation</SelectItem>
+                      <SelectItem value="orchestration">Journey & Channel Orchestration</SelectItem>
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
@@ -311,7 +310,7 @@ export default function ContactSection() {
                 </div>
 
                 <Button type="submit" className="luxury-button-primary w-full" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Request Consultation"}
+                  {isSubmitting ? "Sending..." : "Book My Discovery Call"}
                 </Button>
               </form>
             )}

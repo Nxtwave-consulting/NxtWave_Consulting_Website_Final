@@ -79,10 +79,10 @@ export default function CareersSection() {
                 <h3 className="font-semibold mb-3">Current Focus Areas</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Go-to-Market Strategy</li>
-                  <li>• Neuroscience-Based Marketing</li>
-                  <li>• Financial Strategy & Analysis</li>
-                  <li>• Executive Coaching</li>
-                  <li>• Business Development</li>
+                  <li>• Behaviorally Informed Conversion Systems</li>
+                  <li>• Healthcare &amp; Tech Engagement</li>
+                  <li>• Neuroscience-Based Messaging</li>
+                  <li>• Measurement &amp; Experimentation</li>
                 </ul>
               </div>
             </div>

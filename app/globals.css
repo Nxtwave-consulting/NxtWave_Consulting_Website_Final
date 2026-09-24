@@ -218,3 +218,9 @@
     animation-duration: 20s;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .illustration * {
+    animation: none !important;
+  }
+}

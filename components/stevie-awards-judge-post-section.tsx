@@ -154,7 +154,7 @@ export default function StevieAwardsJudgePostSection() {
               <p className="text-muted-foreground leading-relaxed">
                 This appointment reflects not just personal recognition, but also the innovative work we're doing at NXT
                 Wave Consulting in combining traditional go-to-market excellence with neuroscience-backed approaches.
-                Our methodology of integrating nervous system regulation, performance psychology, and data-driven
+                Our methodology of integrating neuroscience, behavioral science, and data-driven
                 strategies represents the kind of forward-thinking approach that the Stevie Awards celebrate.
               </p>
 
